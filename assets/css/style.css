@@ -1,0 +1,225 @@
+
+/*-----------------------------------------------------------------CSS navbar------------------------------------------------------------------*/
+
+.navbar {
+    background-color: rgb(221, 166, 145);
+}
+
+.brand-e-icon-flexbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100px;
+    justify-content: space-evenly;
+}
+
+.brand {
+    text-decoration: none;
+    color: black;
+}
+
+.navbar-toggler {
+    margin-right: 1rem;
+}
+
+/*--------------------------------------------------------------------CSS prima section---------------------------------------------------------*/
+
+.first-section-flexbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    row-gap: 1rem;
+    border: 7px dashed rgb(221, 166, 145);
+    margin: 2rem;   
+}
+
+.buttons-flexbox {
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+    justify-content: space-between;
+}
+
+/*----------------------------------------------------------CSS cards (seconda section)----------------------------------------------------------*/
+
+.cards-flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 2rem;
+    gap: 1rem;
+}
+
+/*-------------------------------------------------------------CSS singole card-----------------------------------------------------------------*/
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card--title {
+    text-align: center;
+    font-size: 40px
+}
+
+.card-text {
+    margin: 0;
+}
+
+.btn-group-9min-flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 1rem;
+}
+
+/*--------------------------------------------------------------CSS footer------------------------------------------------------------*/
+
+.footer-flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+footer {
+    background-color: rgb(221, 166, 145);
+}
+
+.link {
+    color: black;
+}
+
+footer>.link {
+    padding: 1rem;
+}
+
+/*--------------------------------------------------------------CSS paragrafi-------------------------------------------------------------*/
+
+p {
+    text-align: left;
+    margin: 1rem;
+}
+
+/*------------------------------------------------------------CSS tutti bottoni-------------------------------------------------------------*/
+
+.btn-outline{
+    color: rgb(121, 116, 116);
+    border-color: rgb(121, 116, 116);
+}
+
+.btn-outline:hover {
+    color: white;
+    border-color:  rgb(121, 116, 116);
+    background-color:  rgb(121, 116, 116) ;
+}
+
+/*-------------------------------------------------------------------CSS font----------------------------------------------------------------*/
+
+.nanum-pen-script {
+    font-family: 'Nanum Pen Script', cursive;
+}
+
+
+section>.nanum-pen-script {
+    font-size: 70px;
+
+}
+
+/*-----------------------------------------------------Sotto i 360px di portrait (Perchè non funziona?)--------------------------------------------------*/
+
+@media (max-width:360px) {
+    
+    /* .first-section-flexbox {
+        height: 700px;
+        border: 3px dashed rgb(221, 166, 145);
+        row-gap: 0;
+       
+    }
+
+    #collezione-album {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .bnt-first-section {
+        font-size: xx-small;
+    }
+
+    .buttons-flexbox {
+        width: 200px;
+        justify-content: space-between;
+    } */
+    
+}
+
+
+/*------------------------------------------------------------Sotto i 460px di portratit--------------------------------------------------------*/
+
+@media (max-width:460px) {
+    
+    .first-section-flexbox {
+        height: 500px;
+        border: 5px dashed rgb(221, 166, 145);
+        row-gap: 0;
+       
+    }
+
+    #collezione-album {
+        font-size: 55px;
+        text-align: center;
+    }
+
+    .bnt-first-section {
+        font-size: x-small;
+    }
+
+    .buttons-flexbox {
+        width: 250px;
+        justify-content: space-between;
+    }
+    
+}
+
+
+/*-------------------------------------------------------------Fino a portrait cellulare---------------------------------------------------------*/
+
+@media (max-width:576px) {
+    
+    .first-section-flexbox {
+        height: 500px;
+        border: 5px dashed rgb(221, 166, 145);
+       
+    }
+
+    #collezione-album {
+        font-size: 55px;
+    }
+}
+
+/* --------------------------------------------------------------Da landscape cellulare------------------------------------------------------------*/
+
+@media (min-width:576px) {
+    
+    .card {
+        width:48.4%;
+    }
+
+    .cards-flexbox {
+        justify-content: space-between;
+    }
+
+}
+
+/* --------------------------------------------------------------Da md (tablet) ------------------------------------------------------------*/
+
+@media (min-width:768px) {
+    
+    .card {
+        width:31.8%;
+    }
+
+}
